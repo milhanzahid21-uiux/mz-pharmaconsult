@@ -504,7 +504,7 @@ main { padding: 28px 0 64px; }
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
 .brand-logo {
-  height: 46px;
+  height: 32px;
   width: auto;
   object-fit: contain;
   display: block;
