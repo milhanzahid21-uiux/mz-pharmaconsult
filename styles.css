@@ -85,7 +85,7 @@ body {
   justify-content: space-between;
   gap: 16px;
 }
-.brand { display: flex; align-items: center; gap: 08px; min-width: 0; flex: 1 1 auto; }
+.brand { display: flex; align-items: center; gap: 03px; min-width: 0; flex: 1 1 auto; }
 .brand-mark {
   font-family: var(--font-display);
   font-weight: 700;
