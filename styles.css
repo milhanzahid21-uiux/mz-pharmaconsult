@@ -76,7 +76,7 @@ body {
   box-shadow: 0 2px 16px rgba(19, 49, 58, 0.18);
 }
 .header-inner {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 14px 18px;
   display: flex;
