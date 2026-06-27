@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MZ PharmaConsult — a PharmD study companion with curated and AI-generated question drills across the full pharmacy curriculum." />
+  <title>MZ PharmaConsult — your PharmD study companion</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ====================== HEADER ====================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">&#8478;</span>
+        <span class="brand-text">
+          <span class="brand-name">MZ PharmaConsult</span>
+          <span class="brand-tagline">your PharmD study companion — notes &amp; question drills</span>
+        </span>
+      </div>
+
+      <nav class="tabs" aria-label="Primary">
+        <button class="tab is-active" id="tab-notes" role="tab" aria-selected="true" aria-controls="panel-notes" data-tab="notes">
+          Notes &amp; Books
+        </button>
+        <button class="tab" id="tab-quiz" role="tab" aria-selected="false" aria-controls="panel-quiz" data-tab="quiz">
+          Case Quiz
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ====================== NOTES & BOOKS ====================== -->
+    <section class="panel is-active" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes" tabindex="-1">
+      <div class="container">
+        <h1 class="page-title">Notes &amp; Books</h1>
+        <p class="page-sub">Open your shared Google Drive folders for lecture notes and reference books.</p>
+
+        <!-- =============== LECTURE NOTES (two links) =============== -->
+        <!--
+          FIND & REPLACE the two URLs below with your Google Drive links:
+            __NOTES_1_2_PROF__  →  Pharm D 1st & 2nd Prof notes Drive link
+            __NOTES_3_PROF__    →  Pharm D 3rd Prof notes Drive link
+        -->
+        <div class="drive-group">
+          <h2 class="drive-group-title">Lecture Notes</h2>
+          <p class="drive-group-sub">Choose your year of study.</p>
+          <div class="drive-grid">
+            <a class="drive-card" href="__NOTES_1_2_PROF__" target="_blank" rel="noopener">
+              <span class="drive-icon" aria-hidden="true">&#128218;</span>
+              <span class="drive-label">Pharm D 1st &amp; 2nd Prof Notes</span>
+              <span class="drive-hint">Open shared Drive folder &#8599;</span>
+            </a>
+
+            <a class="drive-card" href="__NOTES_3_PROF__" target="_blank" rel="noopener">
+              <span class="drive-icon" aria-hidden="true">&#128218;</span>
+              <span class="drive-label">Pharm D 3rd Prof Notes</span>
+              <span class="drive-hint">Open shared Drive folder &#8599;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- =============== REFERENCE BOOKS (two links) =============== -->
+        <!--
+          FIND & REPLACE the two URLs below with your Google Drive links:
+            __BOOKS_LINK_1__  →  first Reference Books Drive link
+            __BOOKS_LINK_2__  →  second Reference Books Drive link
+          Rename the labels below to match what each books folder contains.
+        -->
+        <div class="drive-group">
+          <h2 class="drive-group-title">Reference Books</h2>
+          <p class="drive-group-sub">Select one of the book collections.</p>
+          <div class="drive-grid">
+            <a class="drive-card" href="__BOOKS_LINK_1__" target="_blank" rel="noopener">
+              <span class="drive-icon" aria-hidden="true">&#128214;</span>
+              <span class="drive-label">Reference Books 1</span>
+              <span class="drive-hint">Open shared Drive folder &#8599;</span>
+            </a>
+
+            <a class="drive-card" href="__BOOKS_LINK_2__" target="_blank" rel="noopener">
+              <span class="drive-icon" aria-hidden="true">&#128214;</span>
+              <span class="drive-label">Reference Books 2</span>
+              <span class="drive-hint">Open shared Drive folder &#8599;</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="drive-note">These open shared Google Drive folders in a new tab.</p>
+
+        <!-- Quick notes -->
+        <div class="quicknotes card">
+          <div class="quicknotes-head">
+            <h2 class="section-title">My quick notes</h2>
+            <span class="mono-label">saved locally in this browser</span>
+          </div>
+          <form class="quicknotes-form" id="quicknotes-form">
+            <label class="visually-hidden" for="quicknote-input">Add a quick note</label>
+            <input
+              type="text"
+              id="quicknote-input"
+              class="quicknotes-input"
+              placeholder="Jot a quick note…"
+              autocomplete="off"
+              maxlength="280"
+            />
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+          <ul class="quicknotes-list" id="quicknotes-list" aria-live="polite"></ul>
+          <p class="quicknotes-empty" id="quicknotes-empty">No quick notes yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CASE QUIZ ====================== -->
+    <section class="panel" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz" tabindex="-1" hidden>
+      <div class="container">
+        <h1 class="page-title">Case Quiz</h1>
+
+        <!-- Disclaimer (mandatory, always visible on the quiz) -->
+        <div class="disclaimer" role="note">
+          <span class="disclaimer-icon" aria-hidden="true">&#9888;</span>
+          <p>
+            <strong>Some questions are AI-generated.</strong>
+            Always verify answers against your authentic textbooks before relying on them for exams.
+          </p>
+        </div>
+
+        <!-- SETUP -->
+        <div class="quiz-setup card" id="quiz-setup">
+          <div class="setup-group">
+            <span class="setup-legend mono-label">Subject</span>
+            <div class="chips" id="subject-chips" role="group" aria-label="Subject"></div>
+          </div>
+
+          <div class="setup-row">
+            <div class="setup-group">
+              <span class="setup-legend mono-label">Question style</span>
+              <div class="chips" id="style-chips" role="group" aria-label="Question style">
+                <button class="chip is-active" data-style="scenario">Scenario</button>
+                <button class="chip" data-style="simple">Simple</button>
+                <button class="chip" data-style="mixed">Mixed</button>
+              </div>
+            </div>
+
+            <div class="setup-group">
+              <span class="setup-legend mono-label">Difficulty</span>
+              <div class="chips" id="difficulty-chips" role="group" aria-label="Difficulty">
+                <button class="chip" data-difficulty="Easy">Easy</button>
+                <button class="chip is-active" data-difficulty="Moderate">Moderate</button>
+                <button class="chip" data-difficulty="Hard">Hard</button>
+              </div>
+            </div>
+
+            <div class="setup-group">
+              <span class="setup-legend mono-label">Questions</span>
+              <div class="chips" id="count-chips" role="group" aria-label="Number of questions">
+                <button class="chip" data-count="3">3</button>
+                <button class="chip is-active" data-count="5">5</button>
+                <button class="chip" data-count="10">10</button>
+              </div>
+            </div>
+          </div>
+
+          <label class="toggle">
+            <input type="checkbox" id="curated-only" />
+            <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+            <span class="toggle-text">Use curated questions only (no AI)</span>
+          </label>
+
+          <button class="btn btn-primary btn-lg" id="start-quiz">Start quiz</button>
+        </div>
+
+        <!-- LOADING -->
+        <div class="quiz-loading card" id="quiz-loading" hidden>
+          <div class="spinner" aria-hidden="true"></div>
+          <p class="loading-text" id="loading-text">Generating questions…</p>
+        </div>
+
+        <!-- NOTICE (fallback / info messages) -->
+        <div class="quiz-notice" id="quiz-notice" role="status" hidden></div>
+
+        <!-- ACTIVE QUESTION -->
+        <div class="quiz-active" id="quiz-active" hidden>
+          <div class="quiz-progress">
+            <span class="mono-label" id="progress-label">Question 1 / 5</span>
+            <span class="mono-label" id="score-label">Score 0</span>
+          </div>
+
+          <article class="qcard" id="qcard"><!-- rendered by app.js --></article>
+
+          <div class="quiz-controls">
+            <button class="btn btn-primary" id="next-btn" hidden>Next</button>
+          </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="quiz-results card" id="quiz-results" hidden>
+          <h2 class="results-title">Session complete</h2>
+          <div class="results-score">
+            <span class="results-num" id="results-score">0 / 0</span>
+            <span class="results-pct mono-label" id="results-pct">0%</span>
+          </div>
+          <p class="results-verdict" id="results-verdict"></p>
+          <button class="btn btn-primary btn-lg" id="new-session">New session</button>
+        </div>
+
+        <!-- HISTORY -->
+        <div class="quiz-history card" id="quiz-history" hidden>
+          <div class="history-head">
+            <h2 class="section-title">Recent sessions</h2>
+            <button class="btn btn-ghost btn-sm" id="clear-history">Clear</button>
+          </div>
+          <ul class="history-list" id="history-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="mono-label">MZ PharmaConsult · study aid only · verify against authentic textbooks</p>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
