@@ -497,22 +497,12 @@ main { padding: 28px 0 64px; }
 }
 
 /* ============================ MOTION ============================ */
+/* ============================ MOTION ============================ */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
-  @media (max-width: 700px) {
-  .site-header .brand-name {
-    font-size: 16px;
-  }
-  .header-inner {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .site-header .tabs,
-  .site-header nav {
-    width: 100%;
   }
 }
