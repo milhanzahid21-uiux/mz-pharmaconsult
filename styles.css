@@ -503,5 +503,11 @@ main { padding: 28px 0 64px; }
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+.brand-logo {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
   }
 }
