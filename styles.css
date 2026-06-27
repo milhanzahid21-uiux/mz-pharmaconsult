@@ -503,12 +503,16 @@ main { padding: 28px 0 64px; }
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
-  @media (max-width: 600px) {
-  .site-header,
-  .header-inner,
-  .site-header > div {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+  @media (max-width: 700px) {
+  .site-header .brand-name {
+    font-size: 16px;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .site-header .tabs,
+  .site-header nav {
+    width: 100%;
   }
 }
