@@ -80,13 +80,11 @@ body {
   margin: 0 auto;
   padding: 14px 18px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  flex-wrap: wrap;
 }
-.brand { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 auto; }
-.tabs { flex: 0 0 auto; }
 .brand-mark {
   font-family: var(--font-display);
   font-weight: 700;
