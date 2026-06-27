@@ -76,7 +76,7 @@ body {
   box-shadow: 0 2px 16px rgba(19, 49, 58, 0.18);
 }
 .header-inner {
-  max-width: 800px;
+  max-width: 880px;
   margin: 0 auto;
   padding: 14px 18px;
   display: flex;
@@ -85,7 +85,7 @@ body {
   justify-content: space-between;
   gap: 16px;
 }
-.brand { display: flex; align-items: center; gap: 01px; min-width: 0; flex: 1 1 auto; }
+.brand { display: flex; align-items: center; gap: 04px; min-width: 0; flex: 1 1 auto; }
 .brand-mark {
   font-family: var(--font-display);
   font-weight: 700;
